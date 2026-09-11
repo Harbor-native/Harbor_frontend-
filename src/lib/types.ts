@@ -23,7 +23,7 @@ export interface KycData {
   submittedAt: string | null;
 }
 
-export type FiatCurrency = "USD" | "EUR" | "GBP";
+export type FiatCurrency = "USD" | "EUR" | "GBP" | "NGN";
 
 export interface CryptoAsset {
   symbol: string;

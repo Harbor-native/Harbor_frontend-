@@ -26,6 +26,7 @@ export const FIAT_CURRENCIES: { id: FiatCurrency; label: string; symbol: string 
   { id: "USD", label: "US Dollar", symbol: "$" },
   { id: "EUR", label: "Euro", symbol: "€" },
   { id: "GBP", label: "British Pound", symbol: "£" },
+  { id: "NGN", label: "Nigerian Naira", symbol: "₦" },
 ];
 
 export const PAYMENT_METHODS: PaymentMethodOption[] = [

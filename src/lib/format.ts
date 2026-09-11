@@ -4,6 +4,7 @@ const CURRENCY_LOCALE: Record<FiatCurrency, string> = {
   USD: "en-US",
   EUR: "de-DE",
   GBP: "en-GB",
+  NGN: "en-NG",
 };
 
 export function formatFiat(amount: number, currency: FiatCurrency): string {
