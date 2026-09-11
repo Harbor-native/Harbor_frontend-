@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/Badge";
 import { KycStatusCard } from "@/components/kyc/KycStatusCard";
 import { TransactionRow } from "@/components/transactions/TransactionRow";
 import { TransactionDetailModal } from "@/components/transactions/TransactionDetailModal";
+import Ferrofluid from "@/components/ui/Ferrofluid";
 import { formatFiat, truncateAddress } from "@/lib/format";
 import type { TransactionRecord } from "@/lib/types";
 
@@ -28,7 +29,16 @@ export default function DashboardPage() {
 
   return (
     <div className="space-y-8">
-      <section className="overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-brand-soft to-surface p-8 sm:p-10">
+      <section className="relative overflow-hidden rounded-2xl border border-border p-8 sm:p-10">
+        <div className="absolute inset-0 -z-10">
+          <Ferrofluid
+            colors={["#0f766e", "#0891b2", "#2dd4bf"]}
+            backgroundLight="linear-gradient(to bottom right, var(--brand-soft), var(--surface))"
+            backgroundDark="linear-gradient(to bottom right, var(--brand-soft), var(--surface))"
+            opacity={0.5}
+            speed={0.4}
+          />
+        </div>
         <p className="mb-2 text-sm font-medium text-brand">Fiat-to-crypto on-ramp</p>
         <h1 className="max-w-lg text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
           Buy crypto in minutes, straight to your wallet.
